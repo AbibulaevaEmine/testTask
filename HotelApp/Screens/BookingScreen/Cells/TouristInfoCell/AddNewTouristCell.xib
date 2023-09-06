@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AddNewTouristCell" customModule="HotelApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавить туриста" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWJ-D4-LJK">
+                        <rect key="frame" x="16" y="13" width="185.66666666666666" height="32"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mh4-Vx-CZc">
+                        <rect key="frame" x="327" y="13" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="X3f-nh-bZC"/>
+                            <constraint firstAttribute="height" constant="32" id="i0I-oj-nqS"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title=" " image="addTourist"/>
+                        <connections>
+                            <action selector="addTourist" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mrE-3g-Qgm"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="yWJ-D4-LJK" secondAttribute="bottom" constant="13" id="5jg-Qk-0H9"/>
+                    <constraint firstAttribute="trailing" secondItem="mh4-Vx-CZc" secondAttribute="trailing" constant="16" id="RMy-Cx-oEx"/>
+                    <constraint firstAttribute="bottom" secondItem="mh4-Vx-CZc" secondAttribute="bottom" constant="13" id="W17-4Q-4jc"/>
+                    <constraint firstItem="yWJ-D4-LJK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gYj-i8-zNy"/>
+                    <constraint firstItem="mh4-Vx-CZc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="kGH-Je-meV"/>
+                    <constraint firstItem="yWJ-D4-LJK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="yUZ-Db-YfW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="44" y="-11"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addTourist" width="32" height="32"/>
+    </resources>
+</document>
