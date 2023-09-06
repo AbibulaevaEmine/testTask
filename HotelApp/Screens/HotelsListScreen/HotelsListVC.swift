@@ -62,7 +62,7 @@ final class HotelsListVC: BaseVC, PHotelsListVC {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueCell(ofType: HotelsListCell.self) else { return UITableViewCell() }
         guard let rooms = model?.rooms else { return UITableViewCell()}
-        cell.setup(model: rooms[indexPath.row], actionForBtn: {
+        cell.setup(model: rooms[indexPath.section], actionForBtn: {
             self.navigationController?.pushViewController(BookingAssembler.assemble(), animated: true)
         })
         
